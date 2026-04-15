@@ -9,7 +9,8 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #2d2d2d; /* Dark grey/black from image */
+  background-color: #2d2d2d;
+  /* Dark grey/black from image */
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -19,7 +20,8 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 1.5rem; /* Adjusted for a more subtle look */
+  font-size: 1.5rem;
+  /* Adjusted for a more subtle look */
   font-weight: 400;
 }
 
@@ -71,17 +73,18 @@ nav a:hover {
 }
 
 .hero .cta-button {
-    background-color: #0077c8; /* Blue from 'Find out how' button */
-    color: white;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+  background-color: #0077c8;
+  /* Blue from 'Find out how' button */
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .hero .cta-button:hover {
-    background-color: #005a9a;
+  background-color: #005a9a;
 }
 
 
@@ -103,37 +106,37 @@ main h2 {
 
 /* Card Section */
 .card-section {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.2s;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 .card h3 {
-    padding: 1rem;
-    margin: 0;
-    color: #333;
+  padding: 1rem;
+  margin: 0;
+  color: #333;
 }
 
 /* Link Styles */
@@ -148,11 +151,11 @@ a:hover {
 
 /* Footer */
 footer {
-    background-color: #2d2d2d;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 4rem;
+  background-color: #2d2d2d;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
 }
 
 .login-icon {
@@ -161,7 +164,8 @@ footer {
 }
 
 .login-icon .st0 {
-  stroke: #ffffff; /* Change stroke to white */
+  stroke: #ffffff;
+  /* Change stroke to white */
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -170,14 +174,16 @@ footer {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   right: 0;
   border-radius: 5%;
+  /* color:#000000 */
+
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a,p {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -185,10 +191,14 @@ footer {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu (use JS to add this class) */
-.show {display:block;}
+.show {
+  display: block;
+}
 
 .login-container {
   position: relative;
@@ -197,57 +207,62 @@ footer {
 
 /* Sign-in Page Styles */
 .signin-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 200px); /* Adjust based on header/footer height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  /* Adjust based on header/footer height */
 }
 
 .signin-container {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(3, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(3, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
 }
 
 .signin-container h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
 }
 
 .form-group {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .form-group input[type="text"],
 .form-group input[type="password"] {
-    width: 93%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 93%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .form-group input[type="submit"] {
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    background-color: #0077c8;
-    cursor: pointer;
-    font-size: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #0077c8;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .form-group input[type="submit"]:hover {
-    background-color: #005a9a;
+  background-color: #005a9a;
 }
 
 
+#redirect-link {
+  text-align: center;
+  margin-top: 1rem;
+}
