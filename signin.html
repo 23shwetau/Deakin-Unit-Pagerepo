@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel='shortcut icon' href='//www.deakin.edu.au/_design/deakin-future-students/favicon.ico' type='image/x-icon' />
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="https://www.deakin.edu.au/__data/assets/git_bridge/0024/3858/dist/images/logo_deakin-rebrand-stacked.png?h=a8405bf8"
+              alt="Deakin University Logo" width="134" height="43" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Assessment</a></li>
+            <li><a href="">Resources</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="signin-main">
+        <div class="signin-container">
+            <h2>Sign In</h2>
+            <form id="signin-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="redirect-link">
+                    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Sign In" class="cta-button">
+                </div>
+            </form>
+        </div>
+      </main>
+      <footer>
+        <p>&copy; 2026 Deakin University</p>
+      </footer>
+      <script type="module">
+        import { signIn } from './backend.js';
+        window.signIn = signIn;
+      </script>
+</body>
+</html>
